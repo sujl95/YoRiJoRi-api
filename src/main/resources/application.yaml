@@ -1,1 +1,14 @@
-
+spring:
+    # DataSource Configuration
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:mem:yogi
+        username: sa
+        password:
+    # JPA Configuration
+    jpa:
+        database: h2
+        show-sql: true
+        generate-ddl: true
+        hibernate:
+            ddl-auto: create
