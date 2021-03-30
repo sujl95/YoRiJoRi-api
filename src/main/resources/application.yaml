@@ -1,13 +1,13 @@
 spring:
     # DataSource Configuration
     datasource:
-        driver-class-name: org.h2.Driver
-        url: jdbc:h2:mem:yogi
-        username: sa
-        password:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://yorijori-db.cdxp4ultx56n.ap-northeast-2.rds.amazonaws.com:3306/ohjj
+        username: yorijori
+        password: yorijori-rds
     # JPA Configuration
     jpa:
-        database: h2
+        database: mysql
         show-sql: true
         generate-ddl: true
         hibernate:
