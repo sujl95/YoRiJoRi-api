@@ -1,0 +1,14 @@
+spring:
+    # DataSource Configuration
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/yorijori
+        username: yorijoriuser
+        password: yorijoripass
+    # JPA Configuration
+    jpa:
+        database: mysql
+        show-sql: true
+#        generate-ddl: true
+#        hibernate:
+#            ddl-auto: create
