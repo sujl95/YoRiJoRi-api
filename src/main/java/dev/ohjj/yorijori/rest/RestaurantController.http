@@ -1,0 +1,34 @@
+### 음식점 등록
+POST http://localhost:8080/restaurants
+Content-Type: application/json
+
+{
+  "name" : "도미노 피자 서울역점",
+  "businessName" : "한국 도미노 피자 서울역점",
+  "businessLicense" : "101-10-15082",
+  "minOrderPrice" : "15000",
+  "orderType" : 1,
+  "deliveryCost" : "2000",
+  "shopCategory" : "피자",
+  "detailAddress" : "서울역 1층 , 105호",
+  "holiday" : "연중무휴",
+  "openingTime" : "매일 오전 10시~ 오후 10시",
+  "info" : "도미노피자 서울역점 입니다",
+  "phone" : "010-1234-1234",
+  "originMark" : "[피자 메뉴] 시리얼 칠리 크랩 피자 : 모차렐라 치즈 : 미국산 | 호스래디시 스퀴드(오징어) : 중국산 | 스위트 칠리 크랩(붉은 대게) : 국내산 | 베이컨칩(돼지고기) : 미국산30치즈&뉴욕 스트립 스테이크 피자 : 뉴욕 스트립 스테이크(쇠고기) : 호주산 | 체더치즈 : 미국, 뉴질랜드, 호주치즈케이크",
+  "status" : "영업중",
+  "deliveryTime" : "45분~50분"
+}
+
+
+### 음식점 목록 조회
+GET http://localhost:8080/restaurants
+Accept: application/json
+
+### 음식점 정보 조회
+GET http://localhost:8080/restaurants/1/info
+Accept: application/json
+
+### 음식점 조회
+GET http://localhost:8080/restaurants/1
+Accept: application/json
